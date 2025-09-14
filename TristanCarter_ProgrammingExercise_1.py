@@ -8,7 +8,7 @@ def get_tickets(available_tickets):
         try:
             #Get user input
             tickets_request = int(
-                input(f"Tickets remaining: {available_tickets}. How many tickets would you like to buy (MAX:4)? "))
+                input(f"There are {available_tickets} remaining. Enter how many tickets you would like? "))
             #Check if the number is within range (1-4)
             if 1 <= tickets_request <= 4:
                 #Check if enough tickets are available for purchase
