@@ -26,7 +26,7 @@ def get_tickets(available_tickets):
 #Function to handle the ticket sales
 def sell_tickets():
 
-    total_available = 20
+    total_available = 10
     total_sold = 0
     total_customers = 0
 
