@@ -26,28 +26,28 @@ def get_tickets(available_tickets):
 #Function to handle the ticket sales
 def sell_tickets():
 
-    total_available = 10
-    total_sold = 0
-    total_customers = 0
+    available_tickets = 10
+    sold_tickets = 0
+    customers = 0
 
     #Loop until all tickets are sold
-    while total_sold < total_available:
+    while sold_tickets < available_tickets:
         #Calculate available tickets
-        remaining_tickets = total_available - total_sold
+        remaining_tickets = available_tickets - sold_tickets
 
         #Get and validate the user's ticket request
         tickets = get_tickets(remaining_tickets)
 
         #Update accumulators
-        total_sold += tickets
-        total_customers += 1
+        sold_tickets += tickets
+        customers += 1
 
         #Output remaining tickets after the purchase
-        print(f"Thank you for your purchase. {total_available - total_sold} tickets left.")
+        print(f"Thank you for your purchase. {available_tickets - sold_tickets} tickets left.")
 
     #Display the total number of customers
     print("\nTickets are sold out!")
-    print(f"Total number of customers: {total_customers}")
+    print(f"Total number of customers: {customers}")
 
 
 #Run the application
